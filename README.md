@@ -12,7 +12,7 @@ Rendering 2D graphics using Skia in the browser using webassembly
   * run
     * `Skia\build`
     * `Demo\build`
-    * `Demo\serve`
+    * `start Demo\serve`
       - run this just once, afterwards just refresh the webpage
 * If not on Windows:
   * convert the batch files to `bash` and send me a PR :)
