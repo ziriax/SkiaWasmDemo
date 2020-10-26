@@ -6,6 +6,7 @@
  */
 
 #include "pch.h"
+#include "fonts.h"
 
 #define S1(x) #x
 #define S2(x) S1(x)
@@ -69,6 +70,8 @@ private:
 	sk_sp<SkSurface> cpuSurface;
 
 	sk_sp<SkImage> image;
+  sk_sp<SkTypeface> typeface;
+
 	SkPaint paint;
 	SkFont font;
 	float rotation = 0;
@@ -341,6 +344,10 @@ SkiaApp::SkiaApp()
   image = cpuSurface->makeImageSnapshot();
   assert(image);
 
+  typeface = SkTypeface::MakeFromData(
+      SkData::MakeWithoutCopy(dataKarlaRegular, sizeof(dataKarlaRegular)));
+
+  font.setTypeface(typeface);
 	font.setSize(24);
 }
 
