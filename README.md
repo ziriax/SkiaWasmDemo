@@ -20,6 +20,7 @@ Rendering 2D graphics using Skia and just C++ (no Javascript) in the browser usi
 Have fun!
 
 PS: Look at these other wonderful projects for more inspiration: 
+* https://skia.org/user/modules/canvaskit
 * https://magnum.graphics
 * https://zillalib.github.io
 
