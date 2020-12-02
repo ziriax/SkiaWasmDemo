@@ -1,6 +1,6 @@
 # SkiaWasmDemo
 
-Rendering 2D graphics using Skia in the browser using webassembly
+Rendering 2D graphics using Skia and just C++ (no Javascript) in the browser using webassembly
 
 ## How to build
 
