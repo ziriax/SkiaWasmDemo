@@ -27,7 +27,7 @@ else
   # RELEASE_CONF="-Oz --closure 1 -DSK_RELEASE -DGR_GL_CHECK_ALLOC_WITH_GET_ERROR=0"
 
   # HACK: Faster builds with -O0
-  RELEASE_CONF="-O0 --js-opts 0 --closure 1 -DSK_RELEASE -DGR_GL_CHECK_ALLOC_WITH_GET_ERROR=0"
+  RELEASE_CONF="-O0 --js-opts 0 -DSK_RELEASE -DGR_GL_CHECK_ALLOC_WITH_GET_ERROR=0"
   EXTERNALS_FOLDER=/externals/release
   BUILD_DIR=${BUILD_DIR:="out/release"}
 fi
